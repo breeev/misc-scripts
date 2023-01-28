@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "#!/usr/bin/fish
+function fish_greeting
+	echo \"$(fortune -a | tr \" \')\"
+end
+funcsave fish_greeting" > .greet
+./.greet
